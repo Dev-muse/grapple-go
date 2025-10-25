@@ -1,3 +1,40 @@
+# 🥋 GrappleGo
+
+**GrappleGo** is a full-stack web app built with **Next.js 16**.  
+It helps Brazilian Jiu-Jitsu practitioners discover, register, and manage BJJ events such as seminars, retreats, open mats, and competitions.  
+This version focuses on event discovery, registration, and analytics (no payment module yet).
+
+---
+
+## ⚙️ Tech Stack
+- **Framework:** Next.js 16 (App Router, Server Actions, Caching)
+- **Language:** TypeScript
+- **Database:** MongoDB (Mongoose)
+- **Analytics:** PostHog
+- **File Uploads:** Next.js API Routes + Edge storage
+- **Dev Tools:** Warp, CodeRabbit CI
+- **Deployment:** Vercel
+
+---
+
+## ✨ Core Features
+- Dynamic homepage listing upcoming events  
+- Event detail pages with server actions for registration  
+- MongoDB models and CRUD API routes  
+- Secure image upload for event media  
+- PostHog integration for user and booking analytics  
+- Performance caching and ISR setup  
+- Fully deployed on Vercel  
+
+
+## 🧩 Getting Started
+
+### 1. Clone Repository
+```bash
+git clone https://github.com/yourusername/grapplego.git
+cd grapplego
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
