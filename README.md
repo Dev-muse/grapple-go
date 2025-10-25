@@ -7,6 +7,7 @@ This version focuses on event discovery, registration, and analytics (no payment
 ---
 
 ## ⚙️ Tech Stack
+
 - **Framework:** Next.js 16 (App Router, Server Actions, Caching)
 - **Language:** TypeScript
 - **Database:** MongoDB (Mongoose)
@@ -18,28 +19,31 @@ This version focuses on event discovery, registration, and analytics (no payment
 ---
 
 ## ✨ Core Features
-- Dynamic homepage listing upcoming events  
-- Event detail pages with server actions for registration  
-- MongoDB models and CRUD API routes  
-- Secure image upload for event media  
-- PostHog integration for user and booking analytics  
-- Performance caching and ISR setup  
-- Fully deployed on Vercel  
 
+- Dynamic homepage listing upcoming events
+- Event detail pages with server actions for registration
+- MongoDB models and CRUD API routes
+- Secure image upload for event media
+- PostHog integration for user and booking analytics
+- Performance caching and ISR setup
+- Fully deployed on Vercel
+
+---
 
 ## 🧩 Getting Started
 
 ### 1. Clone Repository
+
 ```bash
-git clone https://github.com/yourusername/grapplego.git
-cd grapplego
+git clone https://github.com/yourusername/grapple-go.git
+cd grapple-go
+```
 
+This is a Next.js
+project bootstrapped with
+create-next-app.
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
-
-First, run the development server:
+2. Run the Development Server
 
 ```bash
 npm run dev
@@ -51,13 +55,19 @@ pnpm dev
 bun dev
 ```
 
+3. Open the App
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can start editing the page by modifying app/page.tsx.
+The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project uses next/font
 
-## Learn More
+to automatically optimise and load Geist
+, a new font family from Vercel.
+
+📘 Learn More
 
 To learn more about Next.js, take a look at the following resources:
 
