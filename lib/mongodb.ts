@@ -1,3 +1,5 @@
+import 'server-only';
+// using server-only to ensure this module is only used in server-side code
 import mongoose from 'mongoose';
 
 // Define the type for our cached connection
@@ -18,7 +20,7 @@ declare global {
  * Global cache for the MongoDB connection to prevent multiple connections
  * during development when modules are hot-reloaded
  */
-let cached: CachedConnection = global.mongooseCache || { conn: null, promise: null };
+const cached: CachedConnection = global.mongooseCache || { conn: null, promise: null };
 
 // Store the cache globally to persist across hot reloads in development
 if (!global.mongooseCache) {
