@@ -126,17 +126,11 @@ EventSchema.pre('save', function (next) {
       .trim();
   }
 
-  // Normalize and validate date format (convert to ISO string if needed)
+  // Validate strict date format (YYYY-MM-DD) to avoid TZ drift
   if (this.isNew || this.isModified('date')) {
-    try {
-      const parsedDate = new Date(this.date);
-      if (isNaN(parsedDate.getTime())) {
-        return next(new Error('Invalid date format'));
-      }
-      // Store as ISO string for consistency
-      this.date = parsedDate.toISOString().split('T')[0]; // YYYY-MM-DD format
-    } catch (error) {
-      return next(new Error('Invalid date format'));
+    const isoDay = /^(?:19|20)\d{2}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$/;
+    if (!isoDay.test(this.date)) {
+      return next(new Error('Date must be in YYYY-MM-DD format'));
     }
   }
 
