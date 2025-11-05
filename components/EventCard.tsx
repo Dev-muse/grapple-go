@@ -20,7 +20,7 @@ const EventCard = ({
   time,
 }: EventCardProps) => {
   return (
-    <Link href={"/events"} id="event-card">
+    <Link href={ `/events/${slug}`} id="event-card">
       <Image
         className="poster"
         width={410}
