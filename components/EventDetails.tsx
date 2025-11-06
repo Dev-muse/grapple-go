@@ -59,6 +59,7 @@ const bookings = 10;
 const EventDetails = async ({ params }: { params: Promise<string> }) => {
   "use cache";
   cacheLife("hours");
+  const slug = await params
 
   const response = await fetch(`${BaseUrl}/api/events/${slug}`);
   const { event } = await response.json();
